@@ -21,6 +21,7 @@ public class BoardController {
         return "boardwrite";
     }
 
+    // 글 작성 처리
     @PostMapping("/board/writepro")
     public String boardWritePro(Board board){
 
@@ -29,6 +30,7 @@ public class BoardController {
         return "";
     }
 
+    // 게시물 리스트 처리
     @GetMapping("/board/list")
     public String boardList(Model model){
 
@@ -36,4 +38,14 @@ public class BoardController {
 
         return "boardlist";
     }
+
+    @GetMapping("/board/view")
+    public String boardView(Model model, Integer id){
+
+        model.addAttribute("board",boardService.boardView(id));
+
+        return "boardview";
+    }
+
+
 }
