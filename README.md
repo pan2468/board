@@ -7,5 +7,5 @@
 + Gradle
 
 #### 개발환경
-IntelijCommunity
-Visual Studio Code
++ IntelijCommunity
++ Visual Studio Code
