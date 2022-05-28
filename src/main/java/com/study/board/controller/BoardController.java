@@ -52,8 +52,6 @@ public class BoardController {
              list = boardService.boardSearchList(searchKeyword,pageable);
         }
 
-
-
         int nowPage = list.getPageable().getPageNumber();
         int startPage = Math.max(nowPage - 4,1);
         int endPage = Math.min(nowPage + 5, list.getTotalPages());
@@ -62,7 +60,6 @@ public class BoardController {
         model.addAttribute("nowPage",pageable);
         model.addAttribute("startPage",startPage);
         model.addAttribute("endPage",endPage);
-        //model.addAttribute("list",boardService.boardList(pageable));
 
         return "boardlist";
     }
