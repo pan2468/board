@@ -9,3 +9,6 @@
 #### 개발환경
 + IntelijCommunity
 + Visual Studio Code
+
+## 게시판
++ CRUD, 페이징, 검색기능, 파일업로드 구현
